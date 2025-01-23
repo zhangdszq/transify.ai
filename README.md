@@ -27,13 +27,13 @@
 
 1. 克隆仓库
 ```bash
-git clone https://github.com/yourusername/assays.git
-cd assays
+git clone https://github.com/zhangdszq/transify.ai.git
+cd transify.ai
 
 
 2. 安装依赖
 ```bash
-cd assays-react
+cd transify.ai
 npm install
  ```
 
@@ -42,32 +42,9 @@ npm install
 npm run dev
  ```
 
-## 使用说明
-1. 文本翻译
-   
-   - 在输入框中输入中文文本
-   - 点击"开始练习"按钮获取英文翻译
-2. 语法分析
-   
-   - 点击任意翻译后的句子旁边的"分析语法"按钮
-   - 查看详细的语法解构和分析
-3. 练习模式
-   
-   - 翻译结果会自动分成单句显示
-   - 将鼠标移开句子后可以进行输入练习
-   - 系统会实时检查输入是否正确
-4. 收藏功能
-   
-   - 点击句子旁的星标可以收藏该句子
-   - 在左侧菜单中可以查看所有收藏的句子
-5. 历史记录
-   
-   - 所有翻译过的文本都会保存在历史记录中
-   - 通过左侧菜单可以快速访问历史记录
-
 ## 项目结构
 ```plaintext
-assays-react/
+transify.ai/
 ├── src/
 │   ├── components/
 │   │   ├── LeftSidebar.jsx    # 左侧菜单组件
