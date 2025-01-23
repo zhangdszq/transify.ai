@@ -1,8 +1,3 @@
-
-// const API_URL = 'https://public-oneapi.vipkid.com/v1/chat/completions';
-// const API_KEY = 'sk-KxqlizeYzsPYbKuS502dE546B08e4808Ab14516dC89a6727';
-// const MODEL = "gpt-4o"
-
 const API_URL = 'https://api.deepseek.com/v1/chat/completions';
 const API_KEY = 'Bearer sk-2ee3ceadef444e0ca75dbfcf8153f93a';
 const MODEL = "deepseek-chat"
