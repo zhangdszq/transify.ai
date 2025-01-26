@@ -60,14 +60,15 @@ const PracticeArea = ({ sentences, onAnalyzeGrammar, isAnalyzing, favorites, onF
                             </svg>
                         </button>
                     </div>
-                    <input
+                    {/* 暂时隐藏练习输入框 */}
+                    {/* <input
                         type="text"
                         className="practice-input"
                         placeholder="请输入上面的句子..."
                         onChange={(e) => handleInputChange(e, sentence)}
                         onFocus={() => toggleSentenceVisibility(index, true)}
                         onBlur={() => toggleSentenceVisibility(index, false)}
-                    />
+                    /> */}
                     <button 
                         className="analyze-button"
                         onClick={() => handleAnalyzeGrammar(sentence + '.', index)}

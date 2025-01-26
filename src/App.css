@@ -19,7 +19,7 @@ body {
     padding: 40px;
     border-radius: 16px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    width: 600px;
+    width: 760px;
     max-width: 1000px;
     margin: 20px;
 }
@@ -72,6 +72,9 @@ button:active {
 
 .practice-area {
     margin-top: 20px;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
 }
 
 .sentence-container {
@@ -551,6 +554,425 @@ button:active {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.highlight-0 {
+    background-color: rgba(255, 182, 193, 0.2);
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.highlight-1 {
+    background-color: rgba(173, 216, 230, 0.2);
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.highlight-2 {
+    background-color: rgba(144, 238, 144, 0.2);
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.highlight-3 {
+    background-color: rgba(255, 218, 185, 0.2);
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.highlight-4 {
+    background-color: rgba(221, 160, 221, 0.2);
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.sentence-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.chinese-section .content span,
+.english-section .content span {
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin: 0 2px;
+    margin-bottom: 10px;
+}
+
+.chinese-section .highlight-noun,
+.english-section .highlight-noun {
+    background-color: rgba(173, 216, 230, 0.3);
+}
+
+.chinese-section .highlight-verb,
+.english-section .highlight-verb {
+    background-color: rgba(144, 238, 144, 0.3);
+}
+
+.chinese-section .highlight-adj,
+.english-section .highlight-adj {
+    background-color: rgba(255, 218, 185, 0.3);
+}
+
+.chinese-section .highlight-adv,
+.english-section .highlight-adv {
+    background-color: rgba(221, 160, 221, 0.3);
+}
+
+.chinese-section .highlight-prep,
+.english-section .highlight-prep {
+    background-color: rgba(255, 192, 203, 0.3);
+}
+
+.comparison-container {
+  display: flex;
+  gap: 20px;
+  min-width: 720px;
+  margin: 20px auto;
+  max-width: 1200px;
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.chinese-section,
+.english-section {
+  flex: 1;
+  min-width: 253px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chinese-section h3,
+.english-section h3 {
+  margin: 0 0 15px;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.chinese-section .content,
+.english-section .content {
+  line-height: 1.8;
+  color: #444;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chinese-section .content p,
+.english-section .content p {
+  margin: 0;
+  padding: 12px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.chinese-section .content p:hover,
+.english-section .content p:hover {
+  background-color: #f1f5f9;
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .comparison-container {
+    flex-direction: column;
+  }
+}
+
+.title-container {
+    text-align: center;
+    margin: 2.5rem 0 3.5rem;
+    position: relative;
+    padding: 0 20px;
+}
+
+.title-container h1 {
+    font-size: 3.5rem;
+    background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    position: relative;
+}
+
+.subtitle-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    padding-top: 1rem;
+}
+
+.subtitle-cn {
+    font-size: 1.5rem;
+    color: #334155;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+.subtitle-en {
+    font-size: 1.125rem;
+    color: #64748b;
+    font-weight: 400;
+    margin: 0;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .title-container h1 {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle-cn {
+        font-size: 1.25rem;
+    }
+    
+    .subtitle-en {
+        font-size: 1rem;
+    }
+}
+
+.sentence-container {
+    position: relative;
+}
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.button-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.analyze-chinese-button {
+    background-color: #6366f1;
+}
+
+.analyze-chinese-button:hover {
+    background-color: #4f46e5;
+}
+
+.analyze-chinese-button:disabled {
+    background-color: #c7d2fe;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.title-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.subtitle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.subtitle-cn {
+    font-size: 1.2rem;
+    color: #4b5563;
+    margin: 0;
+}
+
+.subtitle-en {
+    font-size: 1rem;
+    color: #6b7280;
+    margin: 0;
+    font-style: italic;
+}
+
+.chinese-content-section {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.chinese-content {
+    line-height: 1.8;
+    min-height: 100px;
+    color: #374151;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.sentence-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.highlight-0 {
+    background-color: rgba(255, 182, 193, 0.2);
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.highlight-1 {
+    background-color: rgba(173, 216, 230, 0.2);
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.highlight-2 {
+    background-color: rgba(144, 238, 144, 0.2);
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.highlight-3 {
+    background-color: rgba(255, 218, 185, 0.2);
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.highlight-4 {
+    background-color: rgba(221, 160, 221, 0.2);
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.sentence-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.chinese-section .content span,
+.english-section .content span {
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.chinese-section .highlight-noun,
+.english-section .highlight-noun {
+    background-color: rgba(173, 216, 230, 0.3);
+}
+
+.chinese-section .highlight-verb,
+.english-section .highlight-verb {
+    background-color: rgba(144, 238, 144, 0.3);
+}
+
+.chinese-section .highlight-adj,
+.english-section .highlight-adj {
+    background-color: rgba(255, 218, 185, 0.3);
+}
+
+.chinese-section .highlight-adv,
+.english-section .highlight-adv {
+    background-color: rgba(221, 160, 221, 0.3);
+}
+
+.chinese-section .highlight-prep,
+.english-section .highlight-prep {
+    background-color: rgba(255, 192, 203, 0.3);
+}
+
+.comparison-container {
+  display: flex;
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.chinese-section,
+.english-section {
+  flex: 1;
+  min-width: 253px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chinese-section h3,
+.english-section h3 {
+  margin: 0 0 15px;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.chinese-section .content,
+.english-section .content {
+  line-height: 1.8;
+  color: #444;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chinese-section .content p,
+.english-section .content p {
+  margin: 0;
+  padding: 12px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.chinese-section .content p:hover,
+.english-section .content p:hover {
+  background-color: #f1f5f9;
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .comparison-container {
+    flex-direction: column;
+  }
 }
 
 .title-container {
